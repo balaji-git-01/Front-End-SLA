@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Details</title>
+  </head>
+  <body>
+    <h2>Get Student Details</h2>
+
+    <form action="#">
+      <label> Student Name: </label>
+      <br /><br />
+      <input type="text" name="studentName" required />
+      <br /><br />
+
+      <label> Roll Number: </label>
+      <br /><br />
+      <input type="text" name="rollNo" required />
+      <br /><br />
+
+      <label> Register Number: </label>
+      <br /><br />
+      <input type="text" name="registerNo" />
+      <br /><br />
+
+      <label> Date of Birth: </label>
+      <br /><br />
+      <input type="date" name="dob" />
+      <br /><br />
+      <label> Email: </label>
+      <br /><br />
+      <input type="email" name="email" />
+      <br /><br />
+      <label> Mobile Number: </label>
+      <br /><br />
+      <input type="tel" name="mobile" />
+      <br /><br />
+
+      <label> Address: </label>
+      <br /><br />
+      <textarea name="address" rows="3" cols="30"></textarea>
+      <br /><br />
+      <label>
+        Department:
+        <select name="department">
+          <option value="">Select</option>
+          <option value="cse">CSE</option>
+          <option value="ece">ECE</option>
+          <option value="eee">EEE</option>
+          <option value="mech">Mechanical</option>
+        </select>
+      </label>
+      <br /><br />
+
+      <button type="submit">Submit Student Details</button>
+      <button type="reset">Clear Form</button>
+    </form>
+  </body>
+</html>

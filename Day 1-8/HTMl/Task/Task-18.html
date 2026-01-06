@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>PIN Code Validation Form</h2>
+
+    <form>
+      <label for="pincode">PIN Code:</label><br />
+      <input
+        type="text"
+        id="pincode"
+        name="pincode"
+        placeholder="Enter 6-digit PIN code"
+        pattern="[0-9]{6}"
+        required
+      />
+      <br /><br />
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>

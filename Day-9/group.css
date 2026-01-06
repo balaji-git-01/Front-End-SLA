@@ -1,0 +1,18 @@
+#main {
+  background-color: black;
+  color: yellow;
+  display: flex;
+  justify-content: space-evenly;
+  height: 300px;
+  align-items: center;
+}
+div {
+  background-color: rebeccapurple;
+}
+
+h2,
+p,
+h1 {
+  text-align: center;
+  color: antiquewhite;
+}

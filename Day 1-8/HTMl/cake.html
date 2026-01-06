@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1><mark>Sweet Delight Cake Shop</mark></h1>
+
+    <p>
+      Welcome to <strong>Sweet Delight Cake Shop</strong>! Your feedback helps
+      us improve our cakes and service.
+    </p>
+
+    <hr />
+
+    <form>
+      <label for="customername"><b>Customer Name:</b></label
+      ><br />
+      <input
+        type="text"
+        id="customername"
+        name="customername"
+        placeholder="Enter your name"
+      /><br /><br />
+
+      <label for="email"><b>Email Address:</b></label
+      ><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+      /><br /><br />
+
+      <label for="caketype"><b>Type of Cake Purchased:</b></label
+      ><br />
+      <input
+        type="text"
+        id="caketype"
+        name="caketype"
+        placeholder="Chocolate / Vanilla / Red Velvet"
+      /><br /><br />
+
+      <label><b>Rate Our Cake Quality:</b></label
+      ><br />
+
+      <input type="radio" id="rating" name="rating" value="Excellent" />
+      <label for="rating">Excellent</label>
+
+      <input type="radio" id="ratinggood" name="rating" value="Good" />
+      <label for="ratinggood">Good</label>
+
+      <input type="radio" id="ratingaverage" name="rating" value="Average" />
+      <label for="ratingaverage">Average</label>
+
+      <input type="radio" id="ratingpoor" name="rating" value="Poor" />
+      <label for="ratingpoor">Poor</label>
+
+      <br /><br />
+
+      <label for="feedback"><b>Your Feedback:</b></label
+      ><br />
+      <textarea
+        id="feedback"
+        name="feedback"
+        rows="5"
+        cols="40"
+        placeholder="Tell us about taste, freshness, and presentation..."
+      ></textarea>
+      <br /><br />
+
+      <label for="suggestions"><b>Suggestions or Special Requests:</b></label
+      ><br />
+      <textarea
+        id="suggestions"
+        name="suggestions"
+        rows="4"
+        cols="40"
+      ></textarea>
+      <br /><br />
+      <button type="submit" id="submit" name="submit">
+        <b>Submit Feedback</b>
+      </button>
+
+      <button type="reset" id="reset" name="reset">
+        <b>Clear Form</b>
+      </button>
+    </form>
+
+    <hr />
+  </body>
+</html>
