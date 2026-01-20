@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        display: flex;
+        justify-content: space-between;
+        height: 120px;
+        background-color: rgb(255, 249, 249);
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .logo img {
+        border-radius: 50%;
+      }
+      nav {
+        padding: 30px;
+      }
+      ul{
+        display: flex;
+        justify-content: space-evenly;
+      }
+      ul li{
+       list-style: none; 
+     
+      }
+      nav a {
+        text-decoration: none;
+        padding: 20px 60px;
+        margin: 0 20px;
+          border: 1px solid rgb(236, 155, 125);
+        border-radius: 10px;
+        color: black;
+        font-weight: 900;
+        font-size: 18px;
+      }
+      li:first-child a{
+        background-color: orangered;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        &nbsp;
+        <img
+          src="../Image/Cake logo.png"
+          alt="logo"
+          width="80px"
+          height="80px"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#cart">cart</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

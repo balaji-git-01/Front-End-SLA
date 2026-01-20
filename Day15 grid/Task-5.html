@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      .admin {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 250px 1fr;
+        grid-template-rows: auto 1fr;
+      }
+      aside {
+        background-color: rgb(53, 11, 93);
+        grid-row: 1/-1;
+      }
+      main {
+        background-color: antiquewhite;
+        display: grid;
+        grid-template-rows: 80px 1fr;
+        grid-row: 1 / -1;
+      }
+      header {
+        background-color: rgb(246, 241, 241);
+        padding: 10px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 900;
+      }
+      .main-content {
+        grid-row: 2 / -1;
+        background-color: white;
+        text-align: justify;
+        padding: 30px;
+
+        font-size: 18px;
+      }
+      ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="admin">
+      <aside>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#student">Student</a></li>
+          <li><a href="#task">Task</a></li>
+          <li><a href="#progress">Progress</a></li>
+          <li><a href="#setting">Setting</a></li>
+        </ul>
+      </aside>
+      <main>
+        <header>Dashboard</header>
+        <div class="main-content">
+          Welcome
+          <br />
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+            sapiente eius qui magnam, a explicabo odio, itaque fuga est sequi,
+            quidem laborum dolor nihil nulla asperiores consequuntur officiis
+            saepe nemo! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolores, molestiae neque corrupti similique consectetur ducimus
+            reprehenderit obcaecati quisquam adipisci ea ullam veniam
+            necessitatibus provident nisi ipsa excepturi facere maiores aut?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+            sapiente eius qui magnam, a explicabo odio, itaque fuga est sequi,
+            quidem laborum dolor nihil nulla asperiores consequuntur officiis
+            saepe nemo! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolores, molestiae neque corrupti similique consectetur ducimus
+            reprehenderit obcaecati quisquam adipisci ea ullam veniam
+            necessitatibus provident nisi ipsa excepturi facere maiores aut?
+          </p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

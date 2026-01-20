@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3,200px);
+        gap: 20px;
+        grid-template-areas:
+          "h h h"
+          "as m m"
+          "f f f";
+        background-color: aqua;
+      }
+      header {
+        grid-area: h;
+        background-color: black;
+      }
+      aside {
+        grid-area: as;
+        background-color: blue;
+      }
+      main {
+        grid-area: m;
+        background-color: brown;
+      }
+      footer {
+        grid-area: f;
+        background-color: chocolate;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Header</h1>
+      </header>
+      <aside>
+        <h2>sidebar</h2>
+      </aside>
+      <main>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corrupti
+        commodi harum. Animi, impedit ad delectus ex molestias dolores eveniet
+        repudiandae debitis, possimus quae vitae, suscipit illo recusandae
+        expedita dolore!
+      </main>
+      <footer>End of page</footer>
+    </div>
+  </body>
+</html>

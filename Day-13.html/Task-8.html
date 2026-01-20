@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      .layout {
+        display: flex;
+        min-height: 100vh;
+      }
+
+      .sidebar {
+        flex: 0 0 250px;
+        background: #111827;
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .sidebar h2 {
+        margin-top: 0;
+        padding: 20px;
+        background-color: white;
+        color: black;
+      }
+
+      .sidebar a {
+        color: #d1d5db;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 35px 20px;
+      }
+      .main {
+        flex: 1;
+        padding: 30px;
+        background: #ffffff;
+      }
+
+      @media (max-width: 780px) {
+        .sidebar {
+          flex: 0 0 200px;
+        }
+        .sidebar a {
+          font-size: 18px;
+          padding: 30px 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <h2>Dashboard</h2>
+        <a href="#">Home</a>
+        <a href="#">Profile</a>
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+      </aside>
+
+      <main class="main">
+        <h1>Main Content</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fuga
+          praesentium, corrupti in suscipit a laudantium necessitatibus
+          repellendus quam autem officiis quo debitis optio nesciunt mollitia
+          voluptas veniam accusantium eaque? Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Itaque, repellat! Quod suscipit sed eum
+          cupiditate ab repudiandae! Aperiam, consectetur vitae eius consequatur
+          praesentium, sint voluptatem facere quisquam, sequi aliquam
+          exercitationem.
+        </p>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .gallery {
+        display: grid;
+        height: 100vh;
+        background-color: azure;
+        grid-template-columns: repeat(4, 200px);
+        grid-template-rows: repeat(auto-fit, 200px);
+        place-content: center;
+        gap: 10px;
+      }
+      .mer-2 {
+        grid-column: span 2;
+      }
+      .row-2 {
+        grid-row: span 2;
+        grid-column: span 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <img
+        class="mer-2"
+        src="photo-1505740420928-5e560c06d30e.jpeg"
+        alt=" img-1"
+        width="400px"
+        height="200px"
+      />
+      <img src="2.jpeg" alt=" img-1" width="200px" height="200px" />
+      <img src="images.jpeg" alt=" img-1" width="200px" height="200px" />
+      <img
+        src="4.jpeg"
+        alt=" img-1"
+        width="400px"
+        height="400px"
+        class="row-2"
+      />
+      <img src="5.jpeg" alt=" img-1" width="200px" height="200px" />
+      <img
+        src="667c2dde223c9c6003f52ca4_0-After-Desktop.webp"
+        alt=" img-1"
+        width="200px"
+        height="200px"
+      />
+      <img
+        src="photo-1505740420928-5e560c06d30e.jpeg"
+        alt=" img-1"
+        width="200px"
+        height="200px"
+      />
+      <img src="2.jpeg" alt=" img-1" width="200px" height="200px" />
+    </div>
+  </body>
+</html>

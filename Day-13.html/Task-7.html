@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .pricing {
+        display: flex;
+        gap: 20px;
+        align-items: stretch;
+      }
+
+      .plan {
+        flex: 1;
+        border-radius: 10px;
+        padding: 24px;
+        border: 1px solid #333;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .plan h2 {
+        margin-top: 0;
+        color: #e50914;
+      }
+
+      .price {
+        font-size: 28px;
+        font-weight: bold;
+        margin: 10px 0 20px;
+        color: black;
+      }
+
+      .features {
+        flex: 1;
+      }
+
+      .features p {
+        margin: 10px 0;
+        color: #000000;
+      }
+
+      button {
+        padding: 14px;
+        border: none;
+        border-radius: 6px;
+        background: #e50914;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Netflix Plans</h1>
+
+    <div class="pricing">
+      <div class="plan">
+        <h2>Mobile</h2>
+        <div class="price">₹149 / month</div>
+        <div class="features">
+          <p>Watch on mobile phone & tablet</p>
+          <p>HD available</p>
+          <p>Download videos</p>
+          <p>1 screen at a time</p>
+        </div>
+        <button>Get Started</button>
+      </div>
+
+      <div class="plan">
+        <h2>Standard</h2>
+        <div class="price">₹499 / month</div>
+        <div class="features">
+          <p>Watch on TV, computer, mobile & tablet</p>
+          <p>Full HD available</p>
+          <p>Download videos</p>
+          <p>2 screens at the same time</p>
+       
+        </div>
+        <button>Get Started</button>
+      </div>
+
+      <div class="plan">
+        <h2>Premium</h2>
+        <div class="price">₹649 / month</div>
+        <div class="features">
+          <p>Watch on TV, computer, mobile & tablet</p>
+          <p>Ultra HD available</p>
+          <p>Download videos</p>
+          <p>4 screens at the same time</p>
+          
+        </div>
+        <button>Get Started</button>
+      </div>
+    </div>
+  </body>
+</html>
