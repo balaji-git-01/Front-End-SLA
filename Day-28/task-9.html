@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Vehicle {
+        constructor(brand, speed) {
+          this.brand = brand;
+          this.speed = speed;
+        }
+
+        accelerate(value) {
+          this.speed += value;
+          console.log(`${this.brand} is now moving at ${this.speed} km/h`);
+        }
+      }
+
+      class ElectricCar extends Vehicle {
+        constructor(brand, speed, batteryLevel) {
+          super(brand, speed);
+          this.batteryLevel = batteryLevel;
+        }
+
+        chargeBattery() {
+          this.batteryLevel = 100;
+          console.log(`${this.brand} battery fully charged.`);
+        }
+      }
+      const car1 = new ElectricCar("Tesla", 60, 40);
+      car1.accelerate(20);
+      car1.chargeBattery();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ body{
+    background-image: url(background.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+} 
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+
+  align-items: center;
+}
+.logo span {
+  font-size: 30px;
+  font-weight: 900;
+  color: orangered;
+  padding-left: 25px;
+  width: 25%;
+}
+nav {
+  width: 50%;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+.search {
+  padding-right: 25px;
+}
+.search input {
+  padding: 8px 25px;
+  border: 2px solid orangered;
+  border-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.search button {
+  padding: 9px 20px;
+
+  background-color: orangered;
+  color: white;
+  border: none;
+  margin-left: -5px;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+.content {
+    width: 70%;
+  padding: 100px;
+}
+.content h1 {
+  font-size: 60px;
+  font-weight: 900;
+  color: white;
+}
+.content span {
+  color: orangered;
+}
+.content p {
+  color: white;
+  font-size: 24px;
+  line-height: 1.5;
+}
+.content button {
+margin-top: 20px;
+  padding: 15px 50px;
+  font-size: 20px;
+  background-color: orangered;
+  border: none;
+  border-radius: 5px;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 500px;
+  margin: auto;
+  background-color: aliceblue
+}

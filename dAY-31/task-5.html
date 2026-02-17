@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const timerId = setTimeout(() => {
+        console.log("This will not run");
+      }, 3000);
+
+      clearTimeout(timerId);
+
+      console.log("Timeout cancelled");
+    </script>
+  </body>
+</html>

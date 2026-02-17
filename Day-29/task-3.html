@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Car {
+        #brand; 
+        constructor(brand, speed) {
+          this.#brand = brand;
+          this.speed = speed;
+        }
+        get brand() {
+          return this.#brand;
+        }
+        setSpeed(newSpeed) {
+          if (newSpeed >= 0) {
+            this.speed = newSpeed;
+            console.log(`Speed updated to ${this.speed} km/h`);
+          } else {
+            console.log("Invalid speed");
+          }
+        }
+      }
+
+      const car1 = new Car("Toyota", 100);
+      console.log(car1.brand);
+      car1.setSpeed(150);
+      console.log(car1.speed);
+    </script>
+  </body>
+</html>

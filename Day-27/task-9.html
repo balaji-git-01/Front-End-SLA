@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+    input {
+      padding: 8px;
+      border: 2px solid gray;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+     <input 
+    type="text" 
+    placeholder="Click to focus"
+    onfocus="focusInput(this)" 
+    onblur="blurInput(this)"
+  >
+
+  <script>
+    function focusInput(element) {
+      element.style.borderColor = "blue";
+    }
+
+    function blurInput(element) {
+      element.style.borderColor = "gray";
+    }
+  </script>
+</body>
+</html>

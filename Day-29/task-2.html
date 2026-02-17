@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Task-2</h1>
+    <script>
+      class User {
+        #password; 
+
+        constructor(username, password) {
+          this.username = username;
+          this.#password = password;
+        }
+        changePassword(oldPwd, newPwd) {
+          if (oldPwd === this.#password) {
+            this.#password = newPwd;
+            console.log("Password changed successfully ");
+          } else {
+            console.log("Old password is incorrect ");
+          }
+        }
+        login(pwd) {
+          if (pwd === this.#password) {
+            console.log("Login successful ");
+          } else {
+            console.log("Invalid password ");
+          }
+        }
+      }
+      const user1 = new User("balaji", "1234");
+      user1.login("1234"); 
+      user1.changePassword("1234", "5678"); 
+      user1.login("5678");
+    </script>
+  </body>
+</html>

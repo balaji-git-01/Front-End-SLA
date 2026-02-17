@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Employee {
+        constructor(name, salary) {
+          this.name = name;
+          this.salary = salary;
+        }
+        getDetails() {
+          return `Name: ${this.name}, Salary: ₹${this.salary}`;
+        }
+      }
+      class Manager extends Employee {
+        constructor(name, salary, department) {
+          super(name, salary); 
+          this.department = department;
+        }
+
+        getDetails() {
+          return `${super.getDetails()}, Department: ${this.department}`;
+        }
+      }
+      const manager1 = new Manager("Balaji", 50000, "IT");
+      console.log(manager1.getDetails());
+    </script>
+  </body>
+</html>

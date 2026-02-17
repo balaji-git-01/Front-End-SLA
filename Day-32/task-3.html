@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function loginUser(isLoggedIn) {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            if (isLoggedIn) {
+              resolve("Login successful");
+            } else {
+              reject("Invalid credentials");
+            }
+          }, 1000);
+        });
+      }
+
+      async function checkLogin(status) {
+        try {
+          const message = await loginUser(status);
+          console.log(message);
+        } catch (error) {
+          console.log("Error:", error);
+        }
+      }
+
+      checkLogin(true);
+      checkLogin(false);
+    </script>
+  </body>
+</html>

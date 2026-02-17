@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function getOrder() {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            resolve("Order received");
+          }, 1000);
+        });
+      }
+      function processOrder() {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            resolve("Order processed");
+          }, 1000);
+        });
+      }
+      function deliverOrder() {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            resolve("Order delivered");
+          }, 1000);
+        });
+      }
+      async function handleOrder() {
+        const step1 = await getOrder();
+        console.log(step1);
+
+        const step2 = await processOrder();
+        console.log(step2);
+
+        const step3 = await deliverOrder();
+        console.log(step3);
+      }
+
+      handleOrder();
+    </script>
+  </body>
+</html>

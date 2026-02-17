@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <p id="text">Javascript</p>
+
+  <button onclick="changeStyle()">Change Style</button>
+
+  <script>
+    function changeStyle() {
+      const el = document.getElementById("text");
+      el.style.color = "blue";
+      el.style.fontSize = "24px";
+      el.style.fontWeight = "bold";
+      el.style.backgroundColor="red"
+    }
+  </script>
+</body>
+</html>

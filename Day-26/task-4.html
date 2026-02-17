@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!doctype html>
+    <html>
+      <head>
+        <title>Change Image</title>
+      </head>
+      <body>
+        <img id="myImg" src="img-1.webp" width="200" />
+
+        <br /><br />
+
+        <button onclick="changeImage()">Change Image</button>
+
+        <script>
+          function changeImage() {
+            document.getElementById("myImg").src = "img-2.webp";
+          }
+        </script>
+      </body>
+    </html>
+  </body>
+</html>

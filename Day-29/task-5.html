@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Greeter {
+        greet(name, time) {
+          if (!name && !time) {
+            return "Hello!";
+          }
+          if (name && !time) {
+            return `Hello, ${name}!`;
+          }
+          if (name && time) {
+            return `Good ${time}, ${name}!`;
+          }
+
+          return "Invalid input";
+        }
+      }
+
+      const greeter = new Greeter();
+
+      console.log(greeter.greet());
+      console.log(greeter.greet("Alice"));
+      console.log(greeter.greet("Alice", "morning"));
+    </script>
+  </body>
+</html>

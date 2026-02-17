@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Car {
+        constructor(brand, model) {
+          this.brand = brand;
+          this.model = model;
+          this.isAvailable = true;
+        }
+
+        rentCar() {
+          if (this.isAvailable) {
+            this.isAvailable = false;
+            console.log(`${this.brand} ${this.model} has been rented.`);
+          } else {
+            console.log(`${this.brand} ${this.model} is not available.`);
+          }
+        }
+
+        returnCar() {
+          this.isAvailable = true;
+          console.log(`${this.brand} ${this.model} has been returned.`);
+        }
+      }
+
+      const car1 = new Car("Toyota", "Innova");
+      const car2 = new Car("Hyundai", "Creta");
+
+      car1.rentCar();
+      car1.rentCar();
+      car1.returnCar();
+      car1.rentCar();
+
+      car2.rentCar();
+    </script>
+  </body>
+</html>

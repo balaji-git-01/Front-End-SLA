@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="myInput" placeholder="Type something" />
+
+    <button onclick="showText()">Show</button>
+
+    <p>You typed: <span id="output"></span></p>
+
+    <script>
+      function showText() {
+        const value = document.getElementById("myInput").value;
+        document.getElementById("output").textContent = value;
+      }
+    </script>
+  </body>
+</html>

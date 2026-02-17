@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      id="inputBox"
+      placeholder="Type something..."
+      onkeyup="showValue()"
+    />
+    <p>Current input value: <span id="output"></span></p>
+
+    <script>
+      function showValue() {
+        let value = document.getElementById("inputBox").value;
+        document.getElementById("output").innerText = value;
+      }
+    </script>
+  </body>
+</html>

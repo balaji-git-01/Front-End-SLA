@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Employee {
+        constructor(name, salary) {
+          this.name = name;
+          this.salary = salary;
+        }
+
+        calculateSalary() {
+          return this.salary;
+        }
+      }
+      class Manager extends Employee {
+        constructor(name, salary, bonus) {
+          super(name, salary);
+          this.bonus = bonus;
+        }
+        calculateSalary() {
+          return this.salary + this.bonus;
+        }
+      }
+
+      const emp = new Employee("Raji", 30000);
+      const mgr = new Manager("Balaji", 50000, 10000);
+
+      console.log(emp.calculateSalary());
+      console.log(mgr.calculateSalary());
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>task-3</h1>
+    <script>
+      class BankAccount {
+        constructor(accountHolder, balance) {
+          this.accountHolder = accountHolder;
+          this.balance = balance;
+        }
+
+        deposit(amount) {
+          this.balance += amount;
+          console.log(`Deposited ₹${amount}`);
+        }
+
+        withdraw(amount) {
+          if (amount > this.balance) {
+            console.log("Insufficient balance!");
+          } else {
+            this.balance -= amount;
+            console.log(`Withdrawn ₹${amount}`);
+          }
+        }
+
+        checkBalance() {
+          console.log(`Current Balance: ₹${this.balance}`);
+        }
+      }
+
+      const account1 = new BankAccount("Balaji", 5000);
+
+      account1.checkBalance();
+      account1.deposit(2000);
+      account1.checkBalance();
+      account1.withdraw(3000);
+      account1.checkBalance();
+      account1.withdraw(6000);
+    </script>
+  </body>
+</html>

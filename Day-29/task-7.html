@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Animal {
+        speak() {
+          console.log("The animal makes a sound");
+        }
+      }
+
+      class Dog extends Animal {
+        speak() {
+          console.log("The dog barks ");
+        }
+      }
+
+      class Cat extends Animal {
+        speak() {
+          console.log("The cat meows ");
+        }
+      }
+
+      const animal = new Animal();
+      const dog = new Dog();
+      const cat = new Cat();
+
+      animal.speak();
+      dog.speak();
+      cat.speak();
+    </script>
+  </body>
+</html>

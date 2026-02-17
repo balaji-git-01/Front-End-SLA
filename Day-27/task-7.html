@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <form onsubmit="Submit(event)">
+    <label>
+      Name:
+      <input type="text" id="name" required>
+    </label>
+    <br><br>
+    <label>
+      Email:
+      <input type="email" id="email" required>
+    </label>
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <h3>Submitted Data</h3>
+  <p>Name: <span id="outName"></span></p>
+  <p>Email: <span id="outEmail"></span></p>
+
+  <script>
+    function Submit(event) {
+      event.preventDefault();
+
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+
+      document.getElementById("outName").innerText = name;
+      document.getElementById("outEmail").innerText = email;
+    }
+  </script>
+</body>
+</html>
